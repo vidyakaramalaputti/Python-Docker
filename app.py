@@ -310,3 +310,8 @@ loadBookings();
 @app.get("/", response_class=HTMLResponse)
 def index():
     return HTML_PAGE
+
+
+if __name__ == "__main__":
+      import uvicorn
+      uvicorn.run(app, host="0.0.0.0", port=80)
